@@ -8,6 +8,7 @@
 *::after {
     box-sizing: inherit;
 }
+
 html {
     box-sizing: border-box;
     font-size: 62.5%;
@@ -15,6 +16,8 @@ html {
 }
 
 body {
+    
+
     background-color: rgb(0, 174, 255);
 
 }
@@ -39,33 +42,49 @@ body {
 
 .formato {
     padding: 3%;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    
 }
 
 
 .caja {
     display: flex;
-    flex-direction: row;
     background-color: white;
-    
+    width: 40%;
+    border-bottom: solid 2px rgba(128, 128, 128, 0.741);
 
 }
 
-img {
-    flex-direction: row;
-    
+img {}
 
-}
 .imgRedonda {
-    width:300px;
-    height:300px;
-    border-radius:100%;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    padding: 8%;
 
 }
-.texto{
-    /* display: flex;
-    align-self
-    background-color: white;
-    align-items: center ; */
 
+.texto {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+h1, p {
+
+font-size: 20px;
+
+}
+
+p {
+    word-spacing: 0.5rem; 
+    color: grey; 
 }
